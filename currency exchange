@@ -1,3 +1,5 @@
+// currency exchange from EUR to PHP
+
 function currency(euro) {
 
 var amount = 0;

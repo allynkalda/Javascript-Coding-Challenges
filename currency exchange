@@ -1,0 +1,14 @@
+function currency(euro) {
+
+var amount = 0;
+var peso = 60;
+
+if (typeof euro === "string") {
+	console.log("Enter number");
+} else {
+	console.log(amount = euro * peso);
+}
+}
+
+
+currency("blah");

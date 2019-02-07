@@ -1,0 +1,21 @@
+function calculator(a, op, b) {
+
+ if (op == "plus") {
+ 	return a + b;
+ } else if (op == "minus") {
+ 	return a - b;
+ } else if (op == "times") {
+ 	return a * b;
+ } else if (op == "divided by") {
+ 	return a / b;
+ } else if (typeof a && b !== "number") {
+ 	return "Not number!";
+ }
+
+
+}
+
+
+
+var total = calculator("a", "add", 3);
+console.log(total);

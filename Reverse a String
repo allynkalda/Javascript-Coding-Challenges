@@ -1,0 +1,16 @@
+// Reverse the provided string. You may need to turn the string into an array before you can reverse it. Your result must be a string.
+
+function reverseString(str) {
+  
+  var word = [];
+
+  for (var i = 0; i < str.length; i++) {
+    word.unshift(str.charAt(i));
+
+var reverse = word.join("");
+
+}
+
+return reverse;
+}
+reverseString("hello");

@@ -1,0 +1,33 @@
+// Check if a string (first argument, str) ends with the given target string (second argument, target).
+
+// This challenge can be solved with the .endsWith() method, which was introduced in ES2015. But for the purpose of this challenge, we would like you to use one of the JavaScript substring methods instead.
+
+// Get rid of white spaces in between words for str
+// Take length of str and subtract with length of target
+// Use while loop to loop through subtract to length of str
+// Add indexed elements of str in array
+// Join them and compare with target
+
+
+
+function confirmEnding(str, target) {
+
+var letter2 = str.replace(/\s+/g,'');
+var newTarget = target.length;
+var subtract = letter2.length - target.length;
+var extract = [];
+
+while (subtract < letter2.length) {
+    extract.push(letter2.charAt(subtract))
+    subtract++;
+  }
+var join = extract.join("");
+
+if (join === target) {
+  return true;
+} else {
+  return false;
+}
+}
+
+confirmEnding("He has to give me a new name", "name")

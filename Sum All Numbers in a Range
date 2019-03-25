@@ -1,0 +1,33 @@
+// We'll pass you an array of two numbers. Return the sum of those two numbers plus the sum of all the numbers between them.
+// The lowest number will not always come first.
+
+function sumAll(arr) {
+
+var first = arr[0];
+var second = arr[1];
+var newArray = [];
+var sum = 0;
+
+newArray.push(first + second);
+
+if (first < second) {
+    while (first < second - 1) {
+    newArray.push(first + 1);
+    first++;
+  } 
+  } else {
+    while (second < first - 1) {
+    newArray.push(second + 1);
+    second++;
+  }
+
+}
+
+for (var i = 0; i < newArray.length; i++) {
+    sum += newArray[i];
+  }
+
+  console.log(sum);
+}
+
+sumAll([4, 1]);

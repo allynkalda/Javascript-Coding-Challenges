@@ -1,0 +1,20 @@
+var str = "sHoRt AnD sToUt";
+
+function titleCase(str) {
+var newString = [];
+var newArr = str.toLowerCase().split(" ");
+
+for (let i = 0; i < newArr.length; i++) {
+	if (newArr[i] == 1) {
+		newString.push(newArr[i].toUpperCase());
+	} else {
+		let word = newArr[i].charAt(0).toUpperCase() + newArr[i].split("").splice(1).join("");
+		newString.push(word);
+	}
+	var str = newString.join(" ");
+}
+return str;
+}
+
+
+titleCase(str);

@@ -18,23 +18,19 @@ function pairElement(str) {
 
 		switch(str[i]) {
 			case "A": 
-			arrayForLetter.push("A")
-			arrayForLetter.push("T")
+			arrayForLetter.push("A", "T")
 			newArr.push(arrayForLetter);
 			break;
 			case "T": 
-			arrayForLetter.push("T")
-			arrayForLetter.push("A")
+			arrayForLetter.push("T", "A")
 			newArr.push(arrayForLetter);
 			break;
 			case "G":
-			arrayForLetter.push("G")
-			arrayForLetter.push("C")
+			arrayForLetter.push("G", "C")
 			newArr.push(arrayForLetter);
 			break;
 			case "C":
-			arrayForLetter.push("C")
-			arrayForLetter.push("G")
+			arrayForLetter.push("C", "G")
 			newArr.push(arrayForLetter);
 		}
 	}

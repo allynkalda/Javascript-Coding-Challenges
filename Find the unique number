@@ -1,0 +1,18 @@
+// There is an array with some numbers. All numbers are equal except for one. Try to find it!
+
+
+function findUniq(arr) {
+  let notUnique = ""
+
+for (let i = 0; i < arr.length; i++) {
+	if (arr[i] === arr[i + 1]) {
+		notUnique = arr[i];
+	}
+}
+
+let unique = arr.filter((elem) => elem !== notUnique)
+let [num] = unique
+return num
+}
+
+// findUniq([ 1, 1, 1, 2, 1, 1 ]), 2)

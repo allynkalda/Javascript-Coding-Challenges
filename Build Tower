@@ -1,0 +1,34 @@
+// Build Tower by the following given argument: number of floors (integer and always greater than 0).
+// for example, a tower of 3 floors looks like below
+// [
+//   '  *  ', 
+//   ' *** ', 
+//   '*****'
+// ]
+
+
+function towerBuilder(n) {
+let base = (n * 2) - 1;
+let add = 1;
+let array = [];
+
+for (var i = 0; i < n; i++) { 
+	let str = "";
+	
+	for (let k = 0; k < (base - add) / 2; k++) {
+	str += " ";
+	}
+	
+	for (let k = 0; k < add; k++) {
+	str += "*";
+	}
+	
+	for (let k = 0; k < (base - add) / 2; k++) {
+	str += " ";
+	}
+	
+	add += 2
+	array.push(str)
+}
+return array
+}

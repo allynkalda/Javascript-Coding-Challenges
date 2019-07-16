@@ -14,7 +14,6 @@ function expandedForm(num) {
         if (arr[i] !== "0") {
             let singleNum = arr[i];
             let zeros = (arr.length - i) - 1;
-            console.log(zeros)
             for (let i = 0; i < zeros; i++) {
                 singleNum += "0"
             }
@@ -26,7 +25,6 @@ function expandedForm(num) {
         }
     }
     let lastChar = newNum[newNum.length -2];
-    console.log(lastChar)
     if (lastChar == "+") {
         let str = newNum.substring(0, newNum.length-3);
         return str
